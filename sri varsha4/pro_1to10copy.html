@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            padding: 10px;
+            border: 2px dotted red;
+            box-shadow: 5px 10px rgb(252, 5, 141);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>check 1 to 10 program</h1>
+        <input type="text" name="input" id="input">
+        <button onclick="maggie()">click me</button>
+        <h3>ressult : <span style="background-color:(rgb(242, 255, 0), 0, 0);border-radius: 10px; padding: 20px;" id="out">output</span></h3>
+    </div>
+    <script>
+        function maggie(){
+            var x=parseInt(document.getElementById("input").value);
+            switch(true)
+            {
+            case isNaN(x):
+                document.getElementById("out").innerHTML="given number is lessthan";
+                break;
+            case x>1:
+                document.getElementById("out").innerHTML="give number is greater than 10";
+                break;
+            case x>10:
+                document.getElementById("out").innerHTML=" this is not a number";
+                break;
+                default:
+                document.getElementById("out").innerHTML="ok valid this number between 1 to 10 only";
+           }
+        }
+        
+    </script>
+</body>
+</html>
